@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- CSS -->
+  <style>
+    body {
+      text-align: center;
+    }
+    h1 {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>nextCode24</h1>
+  <h2>menga foydalanayotgan websayt linki</h2>
+  <button onclick="next()">Submit</button>
+
+  <!-- JS -->
+  <script>
+    function next() {
+      var net = window.open();
+      net.document.open();
+      net.document.write("<h1>Bajarildi</h1>");
+      net.document.close();
+    }
+  </script>
+</body>
+</html>

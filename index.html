@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- LINK -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="box-wrapper">
+      <div class="box box-1">Click me</div>
+      <div class="box box-2">Click me</div>
+      <div class="box box-3">Click me</div>
+    </div>
+    <div class="box-wrapper">
+      <div class="box box-4">Click me</div>
+      <div class="box box-5">Click me</div>
+      <div class="box box-6">Click me</div>
+    </div>
+  </div>
+  <!-- JS -->
+  <script>
+    let bodyEl = document.querySelector("body");
+    let box1El = document.querySelector(".box-1")
+
+    box1El.addEventListener("click", function() {
+      bodyEl.style.backgroundColor = "aqua";
+    });
+
+    let box2El = document.querySelector(".box-2")
+
+    box2El.addEventListener("click", function() {
+      bodyEl.style.backgroundColor = "red";
+    });
+
+    let box3El = document.querySelector(".box-3")
+
+    box3El.addEventListener("click", function() {
+      bodyEl.style.backgroundColor = "green";
+    });
+
+    let box4El = document.querySelector(".box-4")
+
+    box4El.addEventListener("click", function() {
+      bodyEl.style.backgroundColor = "yellow";
+    });
+
+    let box5El = document.querySelector(".box-5")
+
+    box5El.addEventListener("click", function() {
+      bodyEl.style.backgroundColor = "pink";
+    });
+
+    let box6El = document.querySelector(".box-6")
+
+    box6El.addEventListener("click", function() {
+      bodyEl.style.backgroundColor = "brown";
+    });
+  </script>
+</body>
+</html>
